@@ -5,6 +5,7 @@ import { PasswordModule } from 'primeng/password';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { FloatLabelModule } from 'primeng/floatlabel';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -14,10 +15,12 @@ import { FloatLabelModule } from 'primeng/floatlabel';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
-
+  constructor(
+    private router: Router
+  ){}
 
   login()
   {
-
+    this.router.navigate(['/main'])
   }
 }

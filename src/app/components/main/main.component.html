@@ -1,1 +1,56 @@
-<p>main works!</p>
+<div class="flex align-items-center justify-content-center" style="min-height: 100vh;">
+    <div class="xs:col-12 md:col-10 lg:col-8 card text-center p-5">
+
+        <h3>Home</h3>
+
+        <div class="mb-4 p-8 flex flex-wrap justify-content-center">  
+            <p-card class="xs:col-12 md:col-12 mb-2 lg:col-4">
+                <ng-template pTemplate="header">
+                    <img alt="Card" class="w-full" src="chat.jpeg" />
+                </ng-template>
+                <ng-template pTemplate="title"> ChatterBlast </ng-template>
+                <ng-template pTemplate="subtitle"> Chatbot </ng-template>
+                <p class="mt-2">
+                    Smart conversations and instant answers
+                </p>
+                <ng-template pTemplate="footer">
+                    <div class="flex gap-4 mt-1">
+                        <p-button label="Operate" class="w-full" styleClass="w-full" />
+                    </div>
+                </ng-template>
+            </p-card>
+            <p-card class="xs:col-12 md:col-12 mb-2 lg:col-4">
+                <ng-template pTemplate="header">
+                    <img alt="Card" class="w-full" src="img-gen.jpeg" />
+                </ng-template>
+                <ng-template pTemplate="title"> DreamWeaver </ng-template>
+                <ng-template pTemplate="subtitle"> Image generation </ng-template>
+                <p class="mt-2">
+                    Generate an image using a prompt
+                </p>
+                <ng-template pTemplate="footer">
+                    <div class="flex gap-4 mt-1">
+                        <p-button label="Operate" class="w-full" styleClass="w-full" />
+                    </div>
+                </ng-template>
+            </p-card>
+
+            <p-card class="xs:col-12 md:col-12 mb-2 lg:col-4">
+                <ng-template pTemplate="header">
+                    <img alt="Card" class="w-full" src="recog.png"/>
+                </ng-template>
+                <ng-template pTemplate="title"> MindReader </ng-template>
+                <ng-template pTemplate="subtitle"> Image recognition </ng-template>
+                <p class="mt-2">
+                    Identify images with AI analysis
+                </p>
+                <ng-template pTemplate="footer">
+                    <div class="flex gap-4 mt-1">
+                        <p-button label="Operate" class="w-full" styleClass="w-full" />
+                    </div>
+                </ng-template>
+            </p-card>
+
+        </div>
+    </div>
+</div>

@@ -10,12 +10,12 @@ p-floatlabel {
 }
 
 :host ::ng-deep {
-    --p-select-focus-border-color: #D3FFF3 !important;
-    --p-input-focus-border-color: #D3FFF3 !important;
-    --p-button-focus-border-color: #D3FFF3 !important;
-    --p-form-field-float-label-focus-color: #D3FFF3 !important;
-    --p-focus-ring-color: #D3FFF3 !important;
-    --p-inputtext-focus-border-color: #D3FFF3 !important;
+    --p-select-focus-border-color: #ffffff !important;
+    --p-input-focus-border-color: #ffffff !important;
+    --p-button-focus-border-color: #ffffff !important;
+    --p-form-field-float-label-focus-color: #ffffff !important;
+    --p-focus-ring-color: #ffffff !important;
+    --p-inputtext-focus-border-color: #ffffff !important;
 
     p-password {
         width: 100%;
@@ -47,5 +47,12 @@ p-floatlabel {
 }
 
 :host ::ng-deep .p-button {
-    width: 80%;
+    width: 80% !important;
+    background: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+:host ::ng-deep .p-button:hover {
+    background: #e0e0e0 !important;
+    border-color: #e0e0e0 !important;
 }
