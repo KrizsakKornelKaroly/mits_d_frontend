@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 import { SpeedDial } from 'primeng/speeddial';
 import { ToastModule } from 'primeng/toast';
@@ -14,13 +14,17 @@ import { ToastModule } from 'primeng/toast';
 })
 export class SidebarComponent {
   items: MenuItem[] | null = null;
+
+  constructor(private router: Router) {}
+
   ngOnInit() {
     this.items = [
         {
             label: 'GitHub',
             icon: 'pi pi-github',
-            target: '_blank',
-            url: 'https://github.com/KrizsakKornelKaroly/mits_d_frontend'
+            command: () => {
+                window.open('https://github.com/KrizsakKornelKaroly/mits_d_frontend', '_blank');
+            }
         },
         {
             label: 'MindReader',
@@ -37,8 +41,10 @@ export class SidebarComponent {
         {
             label: 'Home',
             icon: 'pi pi-home',
-            routerLink: ['/main']
+            command: () => {
+                this.router.navigate(['/main']);
+            }
         },
     ];
-}
+  }
 }
