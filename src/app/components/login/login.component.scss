@@ -1,0 +1,51 @@
+.p-floatlabel input {
+    width: 100%;
+}
+
+p-floatlabel {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+:host ::ng-deep {
+    --p-select-focus-border-color: #D3FFF3 !important;
+    --p-input-focus-border-color: #D3FFF3 !important;
+    --p-button-focus-border-color: #D3FFF3 !important;
+    --p-form-field-float-label-focus-color: #D3FFF3 !important;
+    --p-focus-ring-color: #D3FFF3 !important;
+    --p-inputtext-focus-border-color: #D3FFF3 !important;
+
+    p-password {
+        width: 100%;
+
+        .p-password {
+            width: 100%;
+            display: flex;
+        }
+
+        input {
+            width: 100%;
+        }
+    }
+
+    p-floatlabel {
+        width: 80%;
+
+        .p-floatlabel {
+            width: 100%;
+        }
+    }
+
+    p-button {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+:host ::ng-deep .p-button {
+    width: 80%;
+}
