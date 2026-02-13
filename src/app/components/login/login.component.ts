@@ -21,6 +21,9 @@ export class LoginComponent {
 
   login()
   {
+    //Login impl: /loginra elmegy a kérés, 302 = jó adatok => visszadob a /main-re, 200 = rossz adatok => marad a /login-on
+    //Jó: Bejelentkező adatok session storageban tárolása, /main-re navigálás 
+
     this.router.navigate(['/main'])
   }
 }
