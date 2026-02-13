@@ -15,10 +15,5 @@ export const appConfig: ApplicationConfig = {
         preset: Aura,
       }
     })
-
-
-  
-  
-  
   ]
 };

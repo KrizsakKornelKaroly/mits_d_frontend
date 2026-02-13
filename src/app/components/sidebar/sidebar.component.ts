@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
+import { RouterModule } from '@angular/router';
+import { MenuItem } from 'primeng/api';
 import { SpeedDial } from 'primeng/speeddial';
 import { ToastModule } from 'primeng/toast';
 
@@ -7,7 +8,7 @@ import { ToastModule } from 'primeng/toast';
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [SpeedDial, ToastModule],
+  imports: [SpeedDial, ToastModule, RouterModule],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss'
 })
@@ -16,28 +17,28 @@ export class SidebarComponent {
   ngOnInit() {
     this.items = [
         {
-            label: 'Edit',
-            icon: 'pi pi-pencil',
-        },
-        {
-            label: 'Refresh', 
-            icon: 'pi pi-refresh',
-        },
-        {
-            label: 'Delete',
-            icon: 'pi pi-trash',
-        },
-        {
-            label: 'Upload',
-            icon: 'pi pi-upload',
-            routerLink: ['/fileupload']
-        },
-        {
-            label: 'External',
-            icon: 'pi pi-external-link',
+            label: 'GitHub',
+            icon: 'pi pi-github',
             target: '_blank',
-            url: 'http://angular.io'
-        }
+            url: 'https://github.com/KrizsakKornelKaroly/mits_d_frontend'
+        },
+        {
+            label: 'MindReader',
+            icon: 'pi pi-barcode',
+        },
+        {
+            label: 'DreamWeaver',
+            icon: 'pi pi-image',
+        },
+        {
+            label: 'ChatterBlaster', 
+            icon: 'pi pi-file-word',
+        },
+        {
+            label: 'Home',
+            icon: 'pi pi-home',
+            routerLink: ['/main']
+        },
     ];
 }
 }
