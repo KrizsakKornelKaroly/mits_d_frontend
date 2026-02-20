@@ -1,1 +1,29 @@
-<p>rec works!</p>
+<div class="flex align-items-center justify-content-center mindreader-wrapper">
+    <div class="xs:col-12 md:col-10 lg:col-8 card p-5 mindreader-card">
+
+        <p-button icon="pi pi-arrow-left" severity="secondary" routerLink="/main"></p-button>
+
+        <div class="text-center header-text mb-4">
+            <h3 class="m-0">MindReader</h3>
+            <p class="subtitle">Image recognition</p>
+        </div>
+
+        <div class="upload-section mb-4">
+            <label for="file-upload" class="upload-label">Upload an image to recognize objects:</label>
+            <p-fileupload mode="basic" name="demo[]" chooseIcon="pi pi-upload" url="https://www.primefaces.org/cdn/api/upload.php" accept="image/*" maxFileSize="1000000" [auto]="true" chooseLabel="Browse"></p-fileupload>
+        </div>
+
+        <div class="result-message mb-3">
+            <p>Placeholder object(s) recognized in the image.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="placeholder.png" alt="Uploaded Image" class="preview-image" />
+
+            <div class="bounding-box">
+                <span class="label">Object found</span>
+            </div>
+        </div>
+
+    </div>
+</div>
