@@ -1,0 +1,78 @@
+.mindreader-wrapper {
+    min-height: 100vh;
+    color: #fff;
+}
+
+.mindreader-card {
+    background: #161616;
+    border: 1px solid #333;
+}
+
+.subtitle {
+    color: #888;
+}
+
+.upload-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.upload-label {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.result-message {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.preview-image {
+    max-width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+.bounding-box {
+    position: absolute;
+    border: 2px solid red;
+    background-color: rgba(255, 0, 0, 0.1);
+    pointer-events: none;
+}
+
+.bounding-box .label {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+:host ::ng-deep {
+    --p-button-focus-border-color: #ffffff !important;
+    --p-input-focus-border-color: #ffffff !important;
+    --p-focus-ring-color: #ffffff !important;
+}
+
+:host ::ng-deep .p-button {
+    background: #ffffff !important;
+    border-color: #ffffff !important;
+    color: #000 !important;
+}
+
+:host ::ng-deep .p-button:hover {
+    background: #e0e0e0 !important;
+    border-color: #e0e0e0 !important;
+}
