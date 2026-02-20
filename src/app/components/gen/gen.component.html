@@ -1,1 +1,41 @@
-<p>gen works!</p>
+<div class="flex align-items-center justify-content-center generator-wrapper">
+    <div class="xs:col-12 md:col-10 lg:col-8 card p-5 generator-card">
+
+        <p-button icon="pi pi-arrow-left" severity="secondary" routerLink="/main"></p-button>
+
+        <div class="text-center header-text mb-4">
+            <h3 class="m-0">DreamWeaver</h3>
+            <p class="subtitle">AI Image Generator</p>
+        </div>
+
+        <div class="input-area mb-4">
+            <p-floatlabel variant="on">
+                <input pInputText id="prompt" autocomplete="off" />
+                <label for="prompt">Describe your image...</label>
+            </p-floatlabel>
+
+            <div class="button-row mt-3">
+                <p-button label="Clear" icon="pi pi-times"></p-button>
+
+                <p-button label="Generate" icon="pi pi-image"></p-button>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <div class="image-wrapper">
+                <img src="placeholder.png" />
+            </div>
+
+            <div class="image-actions mt-3">
+                <p-button icon="pi pi-search-plus" pTooltip="Zoom In" tooltipPosition="bottom"></p-button>
+
+                <p-button icon="pi pi-search-minus" pTooltip="Zoom Out" tooltipPosition="bottom"></p-button>
+
+                <p-button icon="pi pi-arrow-up" pTooltip="Upscale" tooltipPosition="bottom"></p-button>
+
+                <p-button icon="pi pi-download" pTooltip="Save Image" tooltipPosition="bottom"></p-button>
+            </div>
+        </div>
+
+    </div>
+</div>
