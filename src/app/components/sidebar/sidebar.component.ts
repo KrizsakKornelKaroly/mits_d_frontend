@@ -29,14 +29,23 @@ export class SidebarComponent {
         {
             label: 'MindReader',
             icon: 'pi pi-barcode',
+            command: () => {
+                this.router.navigate(['/rec']);
+            }
         },
         {
             label: 'DreamWeaver',
             icon: 'pi pi-image',
+            command: () => {
+                this.router.navigate(['/gen']);
+            }
         },
         {
             label: 'ChatterBlaster', 
             icon: 'pi pi-file-word',
+            command: () => {
+                this.router.navigate(['/chat']);
+            }
         },
         {
             label: 'Home',

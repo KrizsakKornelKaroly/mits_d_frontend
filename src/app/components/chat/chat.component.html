@@ -1,1 +1,38 @@
-<p>chat works!</p>
+<div class="flex align-items-center justify-content-center chat-wrapper">
+    <div class="xs:col-12 md:col-10 lg:col-8 card p-5 chat-card">
+
+        <p-button icon="pi pi-arrow-left" severity="secondary" styleClass="back-button" routerLink="/main"></p-button> 
+
+        <div class="text-center header-text">
+            <h3 class="m-0">ChatterBlast</h3>
+            <p class="subtitle">AI Chatbot</p>
+        </div>
+
+        <div class="chat-messages mb-4" #scrollContainer>
+            <div class="message-wrapper user-message">
+                <p-card>
+                    <p class="m-0">User placeholder message</p>
+                </p-card>
+            </div>
+            <div class="message-wrapper ai-message">
+                <p-card>
+                    <p class="m-0">AI placeholder message</p>
+                </p-card>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <p-floatlabel variant="on">
+                <input pInputText id="message" autocomplete="off" />
+                <label for="message">Your message</label>
+            </p-floatlabel>
+
+            <div class="button-row mt-3">
+                <p-button label="Clear" icon="pi pi-times"></p-button>
+
+                <p-button label="Send" icon="pi pi-send"></p-button>
+            </div>
+        </div>
+
+    </div>
+</div>
