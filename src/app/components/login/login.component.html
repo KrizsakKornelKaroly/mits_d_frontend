@@ -1,19 +1,19 @@
 <div class="flex align-items-center justify-content-center" style="min-height: 100vh;">
     <div class="xs:col-12 md:col-10 lg:col-4 card text-center p-5 wrapper">
 
-        <h3>Bejelentkezés</h3>
+        <h3>Login</h3>
 
         <p-floatlabel variant="on" class="mt-5">
             <input pInputText id="on_label" autocomplete="off" />
-            <label for="on_label">Felhasználónév</label>
+            <label for="on_label">Username</label>
         </p-floatlabel>
 
         <p-floatlabel variant="on" class="mt-4">
             <p-password inputId="password_label" [feedback]="false"/>
-            <label for="password_label">Jelszó</label>
+            <label for="password_label">Password</label>
         </p-floatlabel>
 
-        <p-button label="Bejelentkezés" class="mt-5 w-12" (onClick)="login()"/>
+        <p-button label="Login" class="mt-5 w-12" (onClick)="login()"/>
 
     </div>
 </div>
