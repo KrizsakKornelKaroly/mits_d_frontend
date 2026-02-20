@@ -4,6 +4,17 @@
         <h3>Home</h3>
         <p style="color: #a1a1aa;">Select a service</p>
 
+        <div class="flex flex-wrap justify-content-center gap-2 mt-5 mb-5 tokenBox">
+
+            <p-floatlabel variant="on">
+                <input pInputText id="tokenInput" [(ngModel)]="token" autocomplete="off" />
+                <label for="tokenInput">Token</label>
+            </p-floatlabel>
+
+            <p-button id="tokenBtn" [label]="(token && token.trim().length) ? 'Módosítás' : 'Submit'" (onClick)="saveToken()" class="tokenBtn"/>
+        
+        </div>
+            
         <div class="p-5 flex flex-wrap justify-content-center">  
             <p-card class="xs:col-12 md:col-12 mb-2 lg:col-4">
                 <ng-template pTemplate="header">
@@ -16,7 +27,7 @@
                 </p>
                 <ng-template pTemplate="footer">
                     <div class="flex gap-4 mt-1">
-                        <p-button label="Operate" class="w-full" styleClass="w-full" routerLink="/chat" />
+                        <p-button label="Operate" class="w-full botButton" styleClass="w-full" routerLink="/chat" />
                     </div>
                 </ng-template>
             </p-card>
@@ -32,7 +43,7 @@
                 </p>
                 <ng-template pTemplate="footer">
                     <div class="flex gap-4 mt-1">
-                        <p-button label="Operate" class="w-full" styleClass="w-full" routerLink="/gen" />
+                        <p-button label="Operate" class="w-full botButton" styleClass="w-full" routerLink="/gen" />
                     </div>
                 </ng-template>
             </p-card>
@@ -48,7 +59,7 @@
                 </p>
                 <ng-template pTemplate="footer">
                     <div class="flex gap-4 mt-1">
-                        <p-button label="Operate" class="w-full" styleClass="w-full" routerLink="/rec" />
+                        <p-button label="Operate" class="w-full botButton" styleClass="w-full" routerLink="/rec"/>
                     </div>
                 </ng-template>
             </p-card>
